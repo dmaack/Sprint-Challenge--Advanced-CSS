@@ -1,1 +1,27 @@
 // Mixins Here
+
+
+.FlexDirection(@direction){
+    display:flex;
+    flex-direction: @direction;
+}
+
+.widthMargin(){
+    width: 100%;
+    margin:0 auto;
+}
+
+.custom-btn(@button-bg:@btn-bg-color, @width:100px, @border-radius:10px){
+    display: block;
+      margin: 0 10px 20px;
+      padding-top:3.5%;
+      cursor: pointer;
+      background-color:@button-bg;
+      color:white;
+      width: @width;
+      height: 45px;
+      font-size: 2rem;
+      text-align:center;
+      border-radius: @border-radius;
+     
+}
