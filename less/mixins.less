@@ -1,7 +1,24 @@
 // Mixins Here
 
-.displayFlex(@justify, @align){
+
+.FlexCenter(@justify, @align){
     display:flex;
     justify-content: @justify;
     align-items: @align;
+}
+
+
+.custom-btn(@button-bg:#21283a, @width:100px, @border-radius:10px){
+    display: block;
+      margin: 0 10px 20px;
+      padding-top:3.5%;
+      cursor: pointer;
+      background-color:@button-bg;
+      color:white;
+      width: @width;
+      height: 45px;
+      font-size: 2rem;
+      text-align:center;
+      border-radius: @border-radius;
+     
 }
