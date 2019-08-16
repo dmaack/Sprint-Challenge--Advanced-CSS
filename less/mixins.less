@@ -1,14 +1,17 @@
 // Mixins Here
 
 
-.FlexCenter(@justify, @align){
+.FlexDirection(@direction){
     display:flex;
-    justify-content: @justify;
-    align-items: @align;
+    flex-direction: @direction;
 }
 
+.widthMargin(){
+    width: 100%;
+    margin:0 auto;
+}
 
-.custom-btn(@button-bg:#21283a, @width:100px, @border-radius:10px){
+.custom-btn(@button-bg:@btn-bg-color, @width:100px, @border-radius:10px){
     display: block;
       margin: 0 10px 20px;
       padding-top:3.5%;

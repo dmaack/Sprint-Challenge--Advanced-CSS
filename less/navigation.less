@@ -3,9 +3,9 @@
 .navigation{
     
     .nav-bar{
-    background-color:#f4f4f4;
-       display: flex;
-       flex-direction: column; 
+    background-color:@nav-bg;
+    border:1px solid @nav-border;
+       .FlexDirection(column); 
     }
     h1{
         margin:3% 0;
@@ -17,9 +17,9 @@
         justify-content: center;
        
         a{
-            padding:0 2% 1% 2%;
+            padding:0 1% 1% 1%;
             text-decoration: none;
-            color:@header-font-color;
+            color:@nav-font;
             font-size:1.5rem;
         }
     }
@@ -27,18 +27,9 @@
         width:95%;
         margin-left:2%;
         border-radius: 10px;
+        @media @phone{
+            .widthMargin();
+            border-radius: 5px;
+        }
     }
 }
-
-
-// header{
-//     margin:0 10%;
-//     display:flex;
-//     flex-direction: column;
-// }
-// nav{
-    
-//     display: flex;
-//     justify-content: center;
-//     justify-content: space-evenly;
-// }
